@@ -40,7 +40,7 @@ module.exports = (robot) ->
 		readjson.readworkflow_coffee (error,stdout,stderr) ->
 			if stdout.teamcitylistusers.workflowflag == true
 				json={botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitylistusers.admin,podIp:pod_ip,message:msg.message.text};
-				data = {text: 'Approve Request for list U-release components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+				data = {text: 'Approve Request for list teamcity components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 				robot.messageRoom stdout.teamcitylistusers.adminid, data;
 				msg.send 'Your approval request is waiting from '.concat(stdout.teamcitylistusers.admin);
 
@@ -59,7 +59,7 @@ module.exports = (robot) ->
 		readjson.readworkflow_coffee (error,stdout,stderr) ->
 			if stdout.teamcitylistprojects.workflowflag == true
 				json={botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitylistprojects.admin,podIp:pod_ip,message:msg.message.text};
-				data = {text: 'Approve Request for list U-release components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+				data = {text: 'Approve Request for list teamcity components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 				robot.messageRoom stdout.teamcitylistprojects.adminid, data;
 				msg.send 'Your approval request is waiting from '.concat(stdout.teamcitylistprojects.admin);
 
@@ -79,7 +79,7 @@ module.exports = (robot) ->
 		readjson.readworkflow_coffee (error,stdout,stderr) ->
 			if stdout.teamcitylistbuildtypes.workflowflag == true
 				json={botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitylistbuildtypes.admin,podIp:pod_ip,message:msg.message.text};
-				data = {text: 'Approve Request for list U-release components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+				data = {text: 'Approve Request for list teamcity components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 				robot.messageRoom stdout.teamcitylistbuildtypes.adminid, data;
 				msg.send 'Your approval request is waiting from '.concat(stdout.teamcitylistbuildtypes.admin);
 
@@ -98,7 +98,7 @@ module.exports = (robot) ->
 		readjson.readworkflow_coffee (error,stdout,stderr) ->
 			if stdout.teamcitylistbuildqueue.workflowflag == true
 				json={botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitylistbuildqueue.admin,podIp:pod_ip,message:msg.message.text};
-				data = {text: 'Approve Request for list U-release components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+				data = {text: 'Approve Request for list teamcity components',attachments: [{text: '@',fallback: 'Yes or No?',callback_id: 'teamcity_users',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: JSON.stringify(json) },{ name: 'Reject', text: 'Reject',  type: 'button',  value: JSON.stringify(json),confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 				robot.messageRoom stdout.teamcitylistbuildqueue.adminid, data;
 				msg.send 'Your approval request is waiting from '.concat(stdout.teamcitylistbuildqueue.admin);
 
@@ -122,7 +122,7 @@ module.exports = (robot) ->
 				generate_id.getNextSequence (err,id) ->
 					tckid=id
 					payload={callback_id: 'teamcitydeleteprojects',botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitydeleteprojects.admin,podIp:pod_ip,message:msg.message.text,tckid:tckid,app_name:app_name};
-					data = {text: 'Approve Request for list U-release application delete',attachments: [{text: '@'+payload.username+' requested to delete application '+payload.app_name+'\n',fallback: 'Yes or No?',callback_id: 'teamcitydeleteprojects',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: tckid },{ name: 'Reject', text: 'Reject',  type: 'button', value: tckid,confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+					data = {text: 'Approve Request for list teamcity application delete',attachments: [{text: '@'+payload.username+' requested to delete application '+payload.app_name+'\n',fallback: 'Yes or No?',callback_id: 'teamcitydeleteprojects',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: tckid },{ name: 'Reject', text: 'Reject',  type: 'button', value: tckid,confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 					robot.messageRoom stdout.teamcitydeleteprojects.adminid, data;
 					msg.send 'Your approval request is waiting from '.concat(stdout.teamcitydeleteprojects.admin);
 
@@ -174,7 +174,7 @@ module.exports = (robot) ->
 				generate_id.getNextSequence (err,id) ->
 					tckid=id
 					payload={callback_id: 'teamcitycreateprojects',botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitycreateprojects.admin,podIp:pod_ip,message:msg.message.text,tckid:tckid,app_name:app_name};
-					data = {text: 'Approve Request for list U-release application delete',attachments: [{text: '@'+payload.username+' requested to delete application '+payload.app_name+'\n',fallback: 'Yes or No?',callback_id: 'teamcitycreateprojects',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: tckid },{ name: 'Reject', text: 'Reject',  type: 'button', value: tckid,confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
+					data = {text: 'Approve Request for list teamcity application delete',attachments: [{text: '@'+payload.username+' requested to delete application '+payload.app_name+'\n',fallback: 'Yes or No?',callback_id: 'teamcitycreateprojects',color: '#3AA3E3',attachment_type: 'default',actions: [{ name: 'Approve', text: 'Approve', type: 'button', value: tckid },{ name: 'Reject', text: 'Reject',  type: 'button', value: tckid,confirm: {'title': 'Are you sure?','text': 'Do you want to Reject?','ok_text': 'Reject','dismiss_text': 'No'}}]}]}
 					robot.messageRoom stdout.teamcitycreateprojects.adminid, data;
 					msg.send 'Your approval request is waiting from '.concat(stdout.teamcitycreateprojects.admin);
 
