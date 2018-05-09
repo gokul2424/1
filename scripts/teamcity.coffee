@@ -28,7 +28,7 @@ module.exports = (robot) ->
 
 		msg.send 'list projects';
 		msg.send 'list users';
-		msg.send 'list buildtypes';
+		msg.send 'list builds';
 		msg.send 'list buildqueues';
 		msg.send 'delete project projectId';
 		msg.send 'create project projectname';
@@ -75,7 +75,7 @@ module.exports = (robot) ->
 						
 						
 	#list buildtypes/i
-	robot.respond /list buildtypes/i, (msg) ->
+	robot.respond /list builds/i, (msg) ->
 		readjson.readworkflow_coffee (error,stdout,stderr) ->
 			if stdout.teamcitylistbuildtypes.workflowflag == true
 				json={botname:process.env.HUBOT_NAME,username:msg.message.user.name,userid:msg.message.room,approver:stdout.teamcitylistbuildtypes.admin,podIp:pod_ip,message:msg.message.text};
