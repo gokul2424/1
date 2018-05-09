@@ -1,0 +1,43 @@
+{
+	"name":"botname",
+	"bottype":"teamcity",
+	"teamcitylistusers":{
+		"key":115,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	},
+	"teamcitylistprojects":{
+		"key":116,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	},
+	"teamcitylistbuildtypes":{
+		"key":117,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	},
+	"teamcitylistbuildqueue":{
+		"key":118,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	},
+	"teamcitydeleteprojects":{
+		"key":119,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	},
+	"teamcitycreateprojects":{
+		"key":120,
+		"workflowflag":false,
+		"admin":"<admin_channel_name>",
+		"adminid":"<admin_channel_id>"
+	}
+	
+
+	
+}
