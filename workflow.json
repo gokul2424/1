@@ -1,7 +1,5 @@
 {
-	"name":"botname",
-	"bottype":"teamcity",
-	"teamcitylistusers":{
+	"name":"botname",	"teamcitylistusers":{
 		"key":115,
 		"workflowflag":false,
 		"admin":"<admin_channel_name>",
